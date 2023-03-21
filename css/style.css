@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera, .navbar, .banner, .main1, .main2, .main3, .pie-de-pagina {
+    padding: 10px;
+    border: 1px solid;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 100px 40px 100px 230px 60px;
+    row-gap: 5px;
+    column-gap: 10px;
+
+    grid-template-areas: 
+    "cabecera cabecera cabecera"
+    "navbar navbar navbar"
+    "banner banner banner"
+    "main1 main2 main3"
+    "pie-de-pagina pie-de-pagina pie-de-pagina";
+}
+
+.cabecera {
+    grid-area: cabecera;
+}
+
+.navbar {
+    grid-area: navbar;
+    border-radius: 3px;
+	display: inline-flex;
+	background-color: #5d0f0f ;
+	align-items: center;
+	
+}
+
+.navbar ul {
+    display: inline-flex;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.main1 {
+    grid-area: main1;
+}
+
+.main2 {
+    grid-area: main2;
+}
+
+.main3 {
+    grid-area: main3;
+}
+
+.pie-de-pagina {
+    grid-area: pie-de-pagina;
+}
