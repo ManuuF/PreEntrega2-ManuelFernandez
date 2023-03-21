@@ -7,106 +7,169 @@
     <title>Hakiprices</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/estilos-index.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
 </head>
 
 <body>
    <main class="grid">
-     <div class="head head-logo">
-        <a href="Index.html"> <img src="media/img/Logo.png" alt="Logo">
+     <div class="head head-logo"> <!-- Header compuesto de Logo/Ingresa/Registrate/Search Bar/Carrito -->
+        <a class="vinculo" class="vinculo" href="Index.html"> <img src="media/img/Logo.png" alt="Logo">
      </div>
 
      <div class="head searchbar">
-        <input type="search" placeholder="buscar">
-           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <input type="text" class="input" placeholder="  Buscar un producto...">
+				<div class="btn btn_common">
+					<i class="fas fa-search"></i>
+				</div>
      </div>
 
-     <div class="head head-botones">
-        head-botones
+     <div class="head head-botones"> <!-- bootstrap para los botones -->
+        <button type="button" class="btn btn-primary btn-sm ingreso"><a class="vinculo" href="#" class="btn">Ingresa</a></button>
+
+        <button type="button" class="btn btn-primary btn-sm registro"><a class="vinculo" href="./Views/Registro.html" class="btn">Registrate</a></button>
+    
+        <button type="button" class="btn btn-primary btn-sm carrito"><a class="vinculo" href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i></a></button>
      </div>
  
      <nav class="menu-navegacion"> 
          <ul class="navbar"> <!-- Menu de navegacion compuesto de links a Productos/Noticias/Eventos/Cardlist-->
-            <li><a href="#">Productos</a></li>
-             <div class="sub-menu">
-                 <ul>
-                     <li><a href="#">Mazos</a></li>
-                     <li><a href="#">Cajas</a></li>
-                     <li><a href="#">Cartas</a></li>
-                     <li><a href="#">Folios</a></li>
-                 </ul> 
-             </div>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Cardlist</a></li>
+            <li><a class="vinculo" href="#">Productos</a></li>
+            <li><a class="vinculo" href="#">Noticias</a></li>
+            <li><a class="vinculo" href="#">Eventos</a></li>
+            <li><a class="vinculo" href="#">Cardlist</a></li>
          </ul>
      </nav>
  
      <section class="main banner">
-        <img src="./media/img/Banner2.png" alt="Banner">
+        <img src="./media/img/Banner2.jpg" alt="Banner">
      </section>
  
      <section class="main seccion1">
-        color cards
+        <div class="main-botones">
+            <div class="Rojo"> <!-- Boton de cartas rojas -->
+                <a class="vinculo" href="#" class="btn">Rojo</a>
+            </div>
+
+            <div class="Verde"> <!-- Boton de cartas verdes -->
+                <a class="vinculo" href="#" class="btn">Verde</a>
+            </div>
+
+            <div class="Azul"> <!-- Boton de cartas azules -->
+                <a class="vinculo" href="#" class="btn">Azul</a>
+            </div>
+
+            <div class="Violeta"> <!-- Boton de cartas violetas -->
+                <a class="vinculo" href="#" class="btn">Violeta</a>
+            </div>
+
+            <div class="Negro"> <!-- Boton de cartas negras -->
+                <a class="vinculo" href="#" class="btn">Negro</a>
+            </div>
+        </div>
      </section>
 
-     <section class="main seccion2">
-        bprecios
+     <section class="main seccion2"> <!-- tabla que indica algunas cartas que han bajado de precio-->
+        <table class="tabla">
+                    
+            <tr class="titulo-tabla">
+                <th>Bajaron de Precio</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tr class="contenido-tabla"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
+                <td><img src="media/img/Jt Pistol.jpg" alt="Jet Pistol" class="cartas" width="150px"></td>
+                <td class="name-card">Jet Pistol <br class="card-id">ST01-015</td>
+                <td><img src="media/img/Law.jpg" alt="Law047" class="cartas" width="150px"></td>
+                <td class="name-card">Trafalgar Law <br class="card-id">OP01-047</td>
+            </tr>
+
+            <tr class="contenido-tabla"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
+                <td><img src="media/img/Sanji.jpg" alt="Sanji013" class="cartas" width="150px"></td>
+                <td class="name-card">Sanji <br class="card-id">OP01-013</td>
+                <td><img src="media/img/Zoro.jpg" alt="Zoro025" class="cartas" width="150px"></td>
+                <td class="name-card">Roronoa Zoro <br class="card-id">OP01-025</td> 
+            </tr>
+        </table>
      </section>
      
-     <section class="main seccion3">
-        sprecios
+     <section class="main seccion3"> <!-- tabla que indica algunas cartas que han subido de precio-->
+        <table class="tabla">
+                    
+            <tr class="titulo-tabla">
+                <th>Subieron de Precio</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tr class="contenido-tabla"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
+                <td><img src="media/img/Thunder Bagua.jpg" alt="Thunder Bagua" class="cartas" width="150px"></td>
+                <td class="name-card">Thunder Bagua <br class="card-id">OP01-119</td>
+                <td><img src="media/img/Thunder Bolt.jpg" alt="Thunder Bolt" class="cartas" width="150px"></td>
+                <td class="name-card">Thunder Bolt <br class="card-id">OP03-121</td>
+            </tr>
+
+            <tr class="contenido-tabla"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
+                <td><img src="media/img/Nami.jpg" alt="Nami016" class="cartas" width="150px"></td>
+                <td class="name-card">Nami <br class="card-id">OP01-016</td>
+                <td><img src="media/img/Kuzan.jpg" alt="Kuzan096" class="cartas" width="150px"></td>
+                <td class="name-card">Kuzan <br class="card-id">OP02-096</td> 
+            </tr>
+        </table>
      </section>
 
-      
      <footer class="pie-de-pagina">
- 
-         <div class="grupo-1">
- 
-             <div class="box">  <!-- Logo con enlace a la pagina principal -->
-                <figure>
-                  <a href="../Index.html">
-                     <img class="logo-foot" src="./media/img/Logo.png" alt="Logo">
-                  </a> 
-                </figure>
+
+        <div class="grupo-1">
+
+            <div class="box">  <!-- Logo con enlace a la pagina principal -->
+               <figure>
+                 <a href="../Index.html">
+                    <img class="logo-foot" src="media/img/Logo.png" alt="Logo">
+                 </a> 
+               </figure>
+            </div>
+
+            <div class="box">
+                <div class="menu">
+                    <h2>Menu</h2>
+                    <ul class="contenido-menu-foot-1"> <!-- Menu de navegacion compuesto de links a Productos/Noticias/Eventos/Cardlist-->
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Cardlist</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="../Views/Contacto.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                     </ul>
+                     
+                </div>
+                
+            </div>
+
+            <div class="box">
+                
+                <div class="red-social">
+                    <h2>Redes Sociales</h2>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                </div>
+                
              </div>
- 
-             <div class="box">
-                 <div class="menu">
-                     <h2>Menu</h2>
-                     <ul class="contenido-menu-foot-1"> <!-- Menu de navegacion compuesto de links a Productos/Noticias/Eventos/Cardlist-->
-                         <li><a href="#">Productos</a></li>
-                         <li><a href="#">Noticias</a></li>
-                         <li><a href="#">Eventos</a></li>
-                         <li><a href="#">Cardlist</a></li>
-                         <li><a href="#">Nosotros</a></li>
-                         <li><a href="./Views/Contacto.html">Contacto</a></li>
-                         <li><a href="#">FAQ</a></li>
-                      </ul>
-                      
-                 </div>
-                 
-             </div>
- 
-             <div class="box">
-                 
-                 <div class="red-social">
-                     <h2>Redes Sociales</h2>
-                     <a href="#" class="fa-brands fa-facebook"></a>
-                     <a href="#" class="fa-brands fa-instagram"></a>
-                     <a href="#" class="fa-brands fa-twitter"></a>
-                 </div>
-                 
-              </div>
- 
-            
+
+           
+    
+        </div>
+        
+
+    </footer>
      
-         </div>
-         
- 
-     </footer>
- 
- 
+      
+     
    </main>
    
 </body>
