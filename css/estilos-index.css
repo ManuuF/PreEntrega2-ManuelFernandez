@@ -2,18 +2,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    box-sizing: auto;
-}
-
-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'calibri';
 }
 
 ul {
@@ -22,22 +10,33 @@ ul {
 }
 
 .vinculo {
-text-decoration: none;
-color: #afa384;
-}
-
-
+    text-decoration: none;
+    color: #afa384;
+    }
+    
+    
 .head {
-display: flex;
-align-items: center;
-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.vinculo {
+    text-decoration: none;
+    color: #afa384;
+    }
+    
+    
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 100px 50px 360px 500px 400px;
+    grid-template-columns: repeat(3, 33,33%);
+    grid-template-rows: 100px 50px 346px 500px 400px;
     grid-template-areas: 
     "head-logo searchbar head-botones"
     "navbar navbar navbar"
@@ -48,13 +47,14 @@ justify-content: space-between;
 
 .head-logo {
     grid-area: head-logo;
-    padding-top: 40px;
+    padding-top: 5px;
     padding-left: 10px;
 }
 
 
 .searchbar {
     grid-area: searchbar;
+    display: flex;
     width: auto;
 	margin: 38px auto;
     border: 1px solid;
@@ -70,11 +70,15 @@ justify-content: space-between;
 
 .menu-navegacion {
     grid-area: navbar;
+       
 }
 
 .banner {
     grid-area: banner;
-    height: 500px;
+    background-image: url(../media/img/Banner2.jpg);
+    width: 100%;
+    background-position: 0;
+    background-size: cover;
 }
 
 .seccion1 {
@@ -89,7 +93,6 @@ justify-content: space-between;
 .seccion3 {
     grid-area: sprecios;
 }
-
 
 .ingreso {
     font-family: 'calibri';
@@ -142,9 +145,9 @@ justify-content: space-between;
 .navbar {
 	border-radius: 3px;
 	height: fit-content;
-	display: inline-flex;
+	display: flex;
 	background-color: #5d0f0f ;
-	align-items: center;
+	justify-content: left; 
 	padding: 0 10px;
 	
 }
