@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    overflow: auto;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'calibri';
+}
+
+.menu-navegacion, .banner, .contenido-main, .pie-de-pagina, .head {
+    padding: 10px;
+    border: 1px solid;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 140px 40px repeat(2, 230px) 60px;
+    grid-template-areas: 
+    "head-logo searchbar head-botones"
+    "navbar navbar navbar"
+    "banner banner banner"
+    "color-cards bprecios sprecios"
+    "footer footer footer";
+}
+
+.head-logo {
+    grid-area: head-logo;
+}
+
+.searchbar {
+    grid-area: searchbar;
+}
+
+.head-botones {
+    grid-area: head-botones;
+}
+
+.menu-navegacion {
+    grid-area: navbar;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.seccion1 {
+    grid-area: color-cards;
+}
+
+.seccion2 {
+    grid-area: bprecios;
+}
+
+.seccion3 {
+    grid-area: sprecios;
+}
+
+.pie-de-pagina {
+    grid-area: footer;
+}
