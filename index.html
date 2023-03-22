@@ -17,13 +17,7 @@
         <a class="vinculo" class="vinculo" href="Index.html"> <img src="media/img/Logo.png" alt="Logo">
      </div>
 
-     <div class="head searchbar">
-        <input type="text" class="input" placeholder="  Buscar un producto...">
-				<div class="btn btn_common">
-					<i class="fas fa-search"></i>
-				</div>
-     </div>
-
+     
      <div class="head head-botones"> <!-- bootstrap para los botones -->
         <button type="button" class="btn btn-primary btn-sm ingreso"><a class="vinculo" href="#" class="btn">Ingresa</a></button>
 
@@ -32,39 +26,61 @@
         <button type="button" class="btn btn-primary btn-sm carrito"><a class="vinculo" href="#" class="btn"><i class="fa-solid fa-cart-shopping"></i></a></button>
      </div>
  
-     <nav class="menu-navegacion"> 
-         <ul class="navbar"> <!-- Menu de navegacion compuesto de links a Productos/Noticias/Eventos/Cardlist-->
-            <li><a class="vinculo" href="#">Productos</a></li>
-            <li><a class="vinculo" href="#">Noticias</a></li>
-            <li><a class="vinculo" href="#">Eventos</a></li>
-            <li><a class="vinculo" href="#">Cardlist</a></li>
-         </ul>
-     </nav>
+     <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Eventos</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">cartas</a></li>
+                    <li><a class="dropdown-item" href="#">deckbox</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar un prodcuto..." aria-label="Search">
+                <button class="btn btn-danger" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
  
      <section class="main banner">
      </section>
  
      <section class="main seccion1">
         <div class="main-botones">
-            <div class="Rojo"> <!-- Boton de cartas rojas -->
-                <a class="vinculo" href="#" class="btn">Rojo</a>
-            </div>
-
-            <div class="Verde"> <!-- Boton de cartas verdes -->
-                <a class="vinculo" href="#" class="btn">Verde</a>
-            </div>
-
-            <div class="Azul"> <!-- Boton de cartas azules -->
-                <a class="vinculo" href="#" class="btn">Azul</a>
-            </div>
-
-            <div class="Violeta"> <!-- Boton de cartas violetas -->
-                <a class="vinculo" href="#" class="btn">Violeta</a>
-            </div>
-
-            <div class="Negro"> <!-- Boton de cartas negras -->
-                <a class="vinculo" href="#" class="btn">Negro</a>
-            </div>
+            <button type="button" class="btn btn-primary btn-sm rojo"><a class="vinculo" href="#" class="btn">Rojo</a></button>
+            <button type="button" class="btn btn-primary btn-sm verde"><a class="vinculo" href="#" class="btn">Verde</a></button>
+            <button type="button" class="btn btn-primary btn-sm azul"><a class="vinculo" href="#" class="btn">Azul</a></button>
+            <button type="button" class="btn btn-primary btn-sm violeta"><a class="vinculo" href="#" class="btn">Violeta</a></button>
+            <button type="button" class="btn btn-primary btn-sm negro"><a class="vinculo" href="#" class="btn">Negro</a></button>
         </div>
      </section>
 
@@ -85,7 +101,7 @@
                 <td class="name-card">Trafalgar Law <br class="card-id">OP01-047</td>
             </tr>
 
-            <tr class="contenido-tabla"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
+            <tr class="contenido-tabla2"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
                 <td><img src="media/img/Sanji.jpg" alt="Sanji013" class="cartas" width="150px"></td>
                 <td class="name-card">Sanji <br class="card-id">OP01-013</td>
                 <td><img src="media/img/Zoro.jpg" alt="Zoro025" class="cartas" width="150px"></td>
@@ -104,14 +120,14 @@
                 <th></th>
             </tr>
 
-            <tr class="contenido-tabla"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
+            <tr class="contenido-tabla3"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
                 <td><img src="media/img/Thunder Bagua.jpg" alt="Thunder Bagua" class="cartas" width="150px"></td>
                 <td class="name-card">Thunder Bagua <br class="card-id">OP01-119</td>
                 <td><img src="media/img/Thunder Bolt.jpg" alt="Thunder Bolt" class="cartas" width="150px"></td>
                 <td class="name-card">Thunder Bolt <br class="card-id">OP03-121</td>
             </tr>
 
-            <tr class="contenido-tabla"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
+            <tr class="contenido-tabla4"> <!-- imagenes de las cartas con sus respectivos nombres e id-->
                 <td><img src="media/img/Nami.jpg" alt="Nami016" class="cartas" width="150px"></td>
                 <td class="name-card">Nami <br class="card-id">OP01-016</td>
                 <td><img src="media/img/Kuzan.jpg" alt="Kuzan096" class="cartas" width="150px"></td>
@@ -170,6 +186,6 @@
       
      
    </main>
-   
+  <script src="./js/bootstrap.bundle.js"></script> 
 </body>
 </html>
