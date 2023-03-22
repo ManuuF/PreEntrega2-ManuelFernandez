@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #afa384;
+}
+
 .logo-head-2 {
     text-align: center;
+    margin-top: 70px;
     margin-right: 20px;
 }
 
@@ -14,19 +19,19 @@
     font-size: 22px;
     margin-bottom: 10px;
     font-family: 'calibri';
-    color: #afa384;    
+    color: #5d0f0f;    
 }
 
 .caja-de-contacto {
     width: 800px;
-    background: #5d0f0f;
+    background: rgba(0, 0, 0, 0.849);
     padding: 30px;
     margin: auto;
     margin-top: 10px;
     border-radius: 4px;
     font-family: 'calibri';
     color: #afa384;
-    box-shadow: 7px 13px 37px #000;
+    box-shadow: 7px 13px 37px #5d0f0f;
 }
 
 .texto-de-contacto p {
@@ -63,10 +68,10 @@
 
 .caja-de-contacto .btn {
     width: 100%;
-    background: #afa384;
-    border: none;
+    background: #5d0f0f;
+    border: 1px solid #afa384;
     padding: 12px;
-    color: white;
+    color: #afa384;
     margin: 16px 0;
     font-size: 16px;
     cursor: pointer;
@@ -91,7 +96,7 @@
 .pie-de-pagina {
     margin-top: 100px;
     width: 100%;
-    background-color: #afa384;
+    background-color: rgba(0, 0, 0, 0.849);
 }
 
 .pie-de-pagina .grupo-1 {
