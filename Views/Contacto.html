@@ -12,142 +12,140 @@
 </head>
 
 <body>
+<main class="grid-contacto">
+  <header>
 
-    <header>
+    <div class="logo-head-2">  <!-- Logo con enlace a la pagina principal -->
+        <a href="../Index.html"> <img class="Logo" src="../media/img/Logo.png" alt="Logo">
+    </a> 
+    </div>
 
-        <div class="logo-head-2">  <!-- Logo con enlace a la pagina principal -->
-            <a href="../Index.html"> <img class="Logo" src="../media/img/Logo.png" alt="Logo">
-        </a> 
+</header>
+
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-
-    </header>
-
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Noticias</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Eventos</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">cartas</a></li>
+                <li><a class="dropdown-item" href="#">deckbox</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Eventos</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Productos
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">cartas</a></li>
-                    <li><a class="dropdown-item" href="#">deckbox</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    
-                  </ul>
-                </li>
+                
               </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar un prodcuto..." aria-label="Search">
-                <button class="btn btn-danger" type="submit">Buscar</button>
-              </form>
-            </div>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar un prodcuto..." aria-label="Search">
+            <button class="btn btn-danger" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="titulo-Contacto"> <!-- Titulo -->
+    <h1>CONTACTO</h1>
+</div>
+
+<section class="caja-de-contacto"> <!-- Contenido de la pagina Contacto -->
+
+    <div class="texto-de-contacto"> <!-- Texto que incluye un link al perfil de Instagram -->
+        <p>
+        Ante cualquier consulta, estamos para ayudarte.
+    </p>
+    <p>
+        Podés mandarnos un mail usando el formulario de abajo.
+    </p>
+    <p>
+        También podés seguirnos y escribirnos por <a href="#">Instagram</a>
+    </p>
+</div>
+
+    <div class="contenido-de-contacto"> <!-- Incluye campos de relleno de Nombre/Correo E/Mensaje y el boton de Enviar Msj -->
+       <div class="contenido-1">
+        <input class="controles" type="text" name="nombres" placeholder="Su nombre" >
+        <input class="controles" type="email" name="correo" placeholder="Correo electrónico" >
+       </div> 
+       <div class="contenido-2">
+        <input class="controles" class="mensaje" type="text" name="mensaje" placeholder="Su mensaje" >
+        <input class="btn" type="submit" value="Enviar Mensaje"  >
+        </div> 
+    </div>
+
+   
+</section>
+<footer class="pie-de-pagina">
+
+  <div class="grupo-1">
+
+      <div class="box">  <!-- Logo con enlace a la pagina principal -->
+         <figure>
+           <a href="../Index.html">
+              <img class="logo-foot" src="../media/img/Logo.png" alt="Logo">
+           </a> 
+         </figure>
+      </div>
+
+      <div class="box">
+          <div class="menu">
+              <h2>Menu</h2>
+              <ul class="contenido-menu-foot-1"> <!-- Menú de navegacion compuesto de links a Productos/Noticias/Eventos/Cardlist-->
+                  <li><a href="#">Productos</a></li>
+                  <li><a href="#">Noticias</a></li>
+                  <li><a href="#">Eventos</a></li>
+                  <li><a href="#">Cardlist</a></li>
+                  <li><a href="#">Nosotros</a></li>
+                  <li><a href="/Views/Contacto.html">Contacto</a></li>
+                  <li><a href="#">FAQ</a></li>
+               </ul>
+               
           </div>
-        </div>
-      </nav>
+          
+      </div>
 
-    <main>
+      <div class="box">
+          
+          <div class="red-social"> <!-- Links a las redes sociales Facebook/Instagram/Twitter -->
+              <h2>Redes Sociales</h2>
+              <a href="#" class="fa-brands fa-facebook"></a>
+              <a href="#" class="fa-brands fa-instagram"></a>
+              <a href="#" class="fa-brands fa-twitter"></a>
+          </div>
+          
+       </div>
 
-        <div class="titulo-Contacto"> <!-- Titulo -->
-            <h1>CONTACTO</h1>
-        </div>
+     
 
-        <section class="caja-de-contacto"> <!-- Contenido de la pagina Contacto -->
+  </div>
+  
 
-            <div class="texto-de-contacto"> <!-- Texto que incluye un link al perfil de Instagram -->
-                <p>
-                Ante cualquier consulta, estamos para ayudarte.
-            </p>
-            <p>
-                Podés mandarnos un mail usando el formulario de abajo.
-            </p>
-            <p>
-                También podés seguirnos y escribirnos por <a href="#">Instagram</a>
-            </p>
-        </div>
+</footer>
 
-            <div class="contenido-de-contacto"> <!-- Incluye campos de relleno de Nombre/Correo E/Mensaje y el boton de Enviar Msj -->
-               <div class="contenido-1">
-                <input class="controles" type="text" name="nombres" placeholder="Su nombre" >
-                <input class="controles" type="email" name="correo" placeholder="Correo electrónico" >
-               </div> 
-               <div class="contenido-2">
-                <input class="controles" class="mensaje" type="text" name="mensaje" placeholder="Su mensaje" >
-                <input class="btn" type="submit" value="Enviar Mensaje"  >
-                </div> 
-            </div>
-
-           
-        </section>
-
-    </main>
-
-    <footer class="pie-de-pagina">
-
-        <div class="grupo-1">
-
-            <div class="box">  <!-- Logo con enlace a la pagina principal -->
-               <figure>
-                 <a href="../Index.html">
-                    <img class="logo-foot" src="../media/img/Logo.png" alt="Logo">
-                 </a> 
-               </figure>
-            </div>
-
-            <div class="box">
-                <div class="menu">
-                    <h2>Menu</h2>
-                    <ul class="contenido-menu-foot-1"> <!-- Menú de navegacion compuesto de links a Productos/Noticias/Eventos/Cardlist-->
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Noticias</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Cardlist</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="/Views/Contacto.html">Contacto</a></li>
-                        <li><a href="#">FAQ</a></li>
-                     </ul>
-                     
-                </div>
-                
-            </div>
-
-            <div class="box">
-                
-                <div class="red-social"> <!-- Links a las redes sociales Facebook/Instagram/Twitter -->
-                    <h2>Redes Sociales</h2>
-                    <a href="#" class="fa-brands fa-facebook"></a>
-                    <a href="#" class="fa-brands fa-instagram"></a>
-                    <a href="#" class="fa-brands fa-twitter"></a>
-                </div>
-                
-             </div>
-
-           
-    
-        </div>
+</main>
         
-
-    </footer>
 </body>
 </html>

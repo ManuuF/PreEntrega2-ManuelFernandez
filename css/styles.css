@@ -1,3 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+body {
+  background-image: url(../../media/img/Pirate\ and\ nautical\ theme\ grunge\ background_.jpg);
+  background-size: cover;
+  /*CONTACTO*/
+  /*REGISTRO*/
+  /*PIE DE PAGINA*/
+}
+body .vinculo {
+  text-decoration: none;
+  color: #ffffff;
+}
+body .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33, 33%);
+  grid-template-rows: 50px 100px 346px 400px 400px;
+  grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "color-cards bprecios sprecios" "pie pie pie";
+}
+body .head-logo {
+  grid-area: head-logo;
+  padding-left: 10px;
+}
+body .head-botones {
+  grid-area: head-botones;
+  display: flex;
+  justify-content: right;
+}
+body .banner {
+  grid-area: banner;
+  background-image: url(../../media/img/Banner2.jpg);
+  width: 100%;
+  height: 300px;
+  background-position: 0;
+  background-size: cover;
+}
+body .seccion1 {
+  grid-area: color-cards;
+}
+body .seccion2 {
+  grid-area: bprecios;
+}
+body .seccion2 .cartas {
+  transform: 2s;
+}
+body .seccion2 .cartas:hover {
+  transform: scale(1.7);
+}
+body .seccion3 {
+  grid-area: sprecios;
+  padding-left: 80px;
+}
+body .seccion3 .cartas {
+  transform: 2s;
+}
+body .seccion3 .cartas:hover {
+  transform: scale(1.7);
+}
+body .btn {
+  font-family: "calibri";
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  width: 160px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body .btn:hover {
+  transform: scale(1.1);
+}
+body .btn-header {
+  background-color: rgba(0, 0, 0, 0.849);
+}
+body .btn-header:hover {
+  background-color: #5d0f0f;
+}
+body .logo-head-2 {
+  text-align: center;
+  margin-top: 70px;
+  margin-right: 20px;
+}
+body .titulo-Contacto {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "calibri";
+  color: #5d0f0f;
+}
+body .caja-de-contacto {
+  width: 800px;
+  background: rgba(0, 0, 0, 0.849);
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: #afa384;
+  box-shadow: 7px 13px 37px #5d0f0f;
+}
+body .texto-de-contacto p {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  font-family: "calibri";
+  font-weight: bold;
+}
+body .texto-de-contacto a {
+  color: #afa384;
+  text-decoration: none;
+}
+body .texto-de-contacto a:hover {
+  color: #afa384;
+  text-decoration: underline;
+}
+body .controles {
+  width: 100%;
+  background: #5d0f0f;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #afa384;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+body .caja-de-contacto .btn {
+  width: 100%;
+  background: #5d0f0f;
+  border: 1px solid #afa384;
+  padding: 12px;
+  color: #afa384;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+body .contenido-de-contacto .contenido-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+body .contenido-de-contacto .contenido-2 {
+  width: 100%;
+  text-align: center;
+}
+body ::placeholder {
+  color: #afa384;
+}
+body .logo-head-3 {
+  text-align: center;
+  margin-top: 70px;
+  margin-right: 20px;
+}
+body .caja-de-registro {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.849);
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: #afa384;
+  box-shadow: 7px 13px 37px #5d0f0f;
+}
+body .titulo-registro {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "calibri";
+  color: #5d0f0f;
+}
+body .controles {
+  width: 100%;
+  background: #5d0f0f;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #afa384;
+  font-family: "calibri";
+  font-size: 18px;
+  color: white;
+}
+body .caja-de-registro .btn {
+  width: 100%;
+  background: #5d0f0f;
+  border: 1px solid #afa384;
+  padding: 12px;
+  color: #afa384;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+body .caja-de-registro p {
+  height: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+body .caja-de-registro a {
+  color: #afa384;
+  text-decoration: none;
+}
+body .caja-de-registro a:hover {
+  color: #afa384;
+  text-decoration: underline;
+}
+body ::placeholder {
+  color: #afa384;
+}
+body .pie-de-pagina {
+  grid-area: pie;
+  margin-top: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.849);
+  justify-content: center;
+}
+body .pie-de-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 70px 0px;
+}
+body .pie-de-pagina .grupo-1 .box .red-social {
+  text-align: right;
+  margin-right: 80px;
+}
+body .pie-de-pagina .grupo-1 .box .red-social h2 {
+  text-align: right;
+  margin-right: 4px;
+}
+body .pie-de-pagina .grupo-1 .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.849);
+  text-align: center;
+}
+body .pie-de-pagina .grupo-1 .box .red-social a:hover {
+  color: #5d0f0f;
+}
+body .pie-de-pagina .grupo-1 .box h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: "calibri";
+  text-transform: uppercase;
+  text-align: center;
+}
+body .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a {
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  font-family: "calibri";
+}
+body .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a:hover {
+  color: #5d0f0f;
+}
+body .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 li {
+  display: inline-block;
+  margin: 10px;
+  list-style: none;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.black {
+  background-color: black;
+}
 
 /*# sourceMappingURL=styles.css.map */

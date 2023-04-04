@@ -1,0 +1,74 @@
+@media (max-width: 768px) {
+    
+
+    .grid {
+        grid-template-rows: 50px 100px 230px auto auto auto 60px ;
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "head-logo empty head-botones"
+        "banner banner banner"
+        "color-cards color-cards color-cards"
+        "bprecios bprecios bprecios"
+        "sprecios sprecios sprecios"
+        "pie pie pie";
+    }
+
+    .grid-registro .grid-contacto {
+        grid-template-rows: 50px 100px auto 60px ;
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "empty logo empty"
+        "box box box"
+        "pie pie pie";
+
+        .logo-head-2 {
+            grid-area: logo;
+        }
+    
+        .box-registro {
+            grid-area: box;
+        }
+    
+        .pie-de-pagina {
+            grid-area: pie;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+
+    .grid {
+        grid-template-rows: 50px 100px 230px auto auto auto 60px ;
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "head-logo empty head-botones"
+        "banner banner banner"
+        "color-cards color-cards color-cards"
+        "bprecios bprecios bprecios"
+        "sprecios sprecios sprecios"
+        "pie pie pie";
+    }
+
+    .grid-registro .grid-contacto {
+        grid-template-rows: 50px 100px auto 60px ;
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "empty logo empty"
+        "box box box"
+        "pie pie pie";
+
+        .logo-head-2 {
+            grid-area: logo;
+        }
+    
+        .box-registro {
+            grid-area: box;
+        }
+    
+        .pie-de-pagina {
+            grid-area: pie;
+            width: 100%;
+        }
+    }
+}

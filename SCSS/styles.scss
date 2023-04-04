@@ -1,0 +1,323 @@
+@import "./Partials/variables";
+@import "./Partials/reset";
+@import "./Partials/mixin";
+
+
+
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+body {
+	background-image: $background-image;
+    background-size: cover;
+    .vinculo {
+        text-decoration: none;
+        color: $color_1;
+    }
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 33,33%);
+        grid-template-rows: 50px 100px 346px 400px 400px;
+        grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "color-cards bprecios sprecios" "pie pie pie";
+    }
+    .head-logo {
+        grid-area: head-logo;
+        padding-left: 10px;
+    }
+    .head-botones {
+        grid-area: head-botones;
+        display: flex;
+        justify-content: right;
+    }
+    .banner {
+        grid-area: banner;
+        background-image: $banner;
+        @include sizes (100%, 300px);
+        background-position: 0;
+        background-size: cover;
+    }
+    .seccion1 {
+        grid-area: color-cards;        
+    }
+    .seccion2 {
+        grid-area: bprecios;
+        .cartas {
+            transform: 2s;
+        }
+        .cartas:hover{
+            transform: scale(1.7)
+        }    
+    }
+    .seccion3 {
+        grid-area: sprecios;
+        padding-left: 80px;
+        .cartas {
+            transform: 2s;
+        }
+        .cartas:hover{
+            transform: scale(1.7)
+        }        
+    }
+    .btn {
+        font-family: "calibri";
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+        @include sizes (160px,50px);
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        &:hover{
+            transform: scale(1.1)
+        }
+        
+    }
+    .btn-header {
+        background-color:rgba(0, 0, 0, 0.849)
+    }
+    .btn-header:hover{
+        background-color: $color_4;
+    }
+/*CONTACTO*/
+.logo-head-2 {
+    text-align: center;
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+.titulo-Contacto {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'calibri';
+    color: $color_4;    
+}
+
+.caja-de-contacto {
+    width: 800px;
+    background: rgba(0, 0, 0, 0.849);
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: $font-family_1;
+    color: $color_3;
+    box-shadow: 7px 13px 37px $color_4;
+}
+
+.texto-de-contacto p {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    font-family: $font-family_1;
+    font-weight: bold;
+
+}
+
+.texto-de-contacto a {
+    color: $color_3;
+    text-decoration: none;
+}
+
+.texto-de-contacto a:hover {
+    color: $color_3;
+    text-decoration: underline;
+}
+
+.controles {
+    width: 100%;
+    background: $color_4;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $color_3;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: $color_2;
+}
+
+.caja-de-contacto .btn {
+    width: 100%;
+    background: $color_4;
+    border: 1px solid $color_3;
+    padding: 12px;
+    color: $color_3;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.contenido-de-contacto .contenido-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contenido-de-contacto .contenido-2 {
+   width: 100%;
+   text-align: center;
+}
+
+::placeholder {
+    color: $color_3;
+}
+
+/*REGISTRO*/
+.logo-head-3 {
+    text-align: center;
+    margin-top: 70px;
+    margin-right: 20px;
+}
+.caja-de-registro {
+    width: 400px;
+    background:  rgba(0, 0, 0, 0.849);
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: $font-family_1;
+    color: $color_3;
+    box-shadow: 7px 13px 37px $color_4;
+}
+
+.titulo-registro {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: $font-family_1;
+    color: $color_4;
+}
+
+.controles {
+    width: 100%;
+    background: #5d0f0f;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #afa384;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.caja-de-registro .btn {
+    width: 100%;
+    background: #5d0f0f;
+    border: 1px solid #afa384;
+    padding: 12px;
+    color: #afa384;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.caja-de-registro p {
+    height: 15px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.caja-de-registro a {
+    color: #afa384;
+    text-decoration: none;
+}
+
+.caja-de-registro a:hover {
+    color: #afa384;
+    text-decoration: underline;
+}
+
+::placeholder {
+    color: #afa384;
+}
+
+
+/*PIE DE PAGINA*/    
+    .pie-de-pagina {
+        grid-area: pie;
+        margin-top: 100px;
+        width: 100%;
+        background-color: $background-color;
+        justify-content: center;
+        .grupo-1 {
+            width: 100%;
+            max-width: 1920px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            padding: 70px 0px;
+            .box {
+                .red-social {
+                    h2 {
+                        text-align: right;
+                        margin-right: 4px;
+                    }
+                    text-align: right;
+                    margin-right: 80px;
+                    a {
+                        display: inline-block;
+                        text-decoration: none;
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        color: $color_2;
+                        background-color: $background-color;
+                        text-align: center;
+                        &:hover {
+                            color: $color_4;
+                        }
+                    }
+                }
+                h2 {
+                    color: $color_2;
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                    font-family: $font-family_1;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                .menu {
+                    .contenido-menu-foot-1 {
+                        a {
+                            color: $color_2;
+                            margin-bottom: 10px;
+                            margin-left: 60px;
+                            display: block;
+                            list-style: none;
+                            text-decoration: none;
+                            font-family: $font-family_1;
+                            &:hover {
+                                color: $color_4;
+                            }
+                        }
+                        li {
+                            display: inline-block;
+                            margin: 10px;
+                            list-style: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@import "./Partials/bucles";
+

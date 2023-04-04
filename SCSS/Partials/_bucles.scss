@@ -1,0 +1,5 @@
+@each $color in  red, green, blue, purple, black,{
+    .#{$color}{
+        background-color: $color;
+    }
+}
