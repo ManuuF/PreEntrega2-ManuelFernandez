@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+body {
+    background-color: #afa384;
+}
+
+.vinculo {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 33,33%);
+    grid-template-rows: 50px 100px 346px 400px 400px;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "head-logo empty head-botones"
+    "banner banner banner"
+    "color-cards bprecios sprecios"
+    "pie pie pie";
+}
+
+.head-logo {
+    grid-area: head-logo;
+    padding-left: 10px;
+}
+
+.head-botones {
+    grid-area: head-botones;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.banner {
+    grid-area: banner;
+    background-image: url(../media/img/Banner2.jpg);
+    width: 100%;
+    background-position: 0;
+    background-size: cover;
+}
+
+.seccion1 {
+    grid-area: color-cards;
+    margin: 0;
+}
+
+.seccion2 {
+    grid-area: bprecios;
+}
+
+.seccion3 {
+    grid-area: sprecios;
+}
+
+.ingreso {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.849);
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registro {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.849);
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrito {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.849);
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contenido-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+.rojo {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: red;
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.verde {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: green;
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.azul {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: blue;
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.violeta {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: purple;
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.negro {
+    font-family: 'calibri';
+    font-size: 18px;
+    font-weight: bold;
+    background: black;
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pie-de-pagina {
+    grid-area: pie;
+    margin-top: 100px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.849);
+    justify-content: center;
+}
+
+.pie-de-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 70px 0px;
+}
+
+.pie-de-pagina .grupo-1 .box .red-social h2 {
+    text-align: right;
+    margin-right: 4px;
+}
+
+.pie-de-pagina .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'calibri';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a {
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'calibri';
+}
+
+.pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a:hover {
+    color: #afa384;
+}
+
+.pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 li {
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+
+.pie-de-pagina .grupo-1 .box .red-social {
+    text-align: right;
+    margin-right: 80px;
+}
+
+
+.pie-de-pagina .grupo-1 .box .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background-color: #afa384;
+    text-align: center;
+}
+
+.pie-de-pagina .grupo-1 .box .red-social a:hover {
+    color: #5d0f0f;
+}
+
+@media (max-width: 768px) {
+    
+
+    .grid {
+        grid-template-rows: 50px 100px 230px auto auto auto 60px ;
+        grid-template-areas: 
+        "navbar navbar navbar"
+        "head-logo empty head-botones"
+        "banner banner banner"
+        "color-cards color-cards color-cards"
+        "bprecios bprecios bprecios"
+        "sprecios sprecios sprecios"
+        "pie pie pie";
+    }
+
+    .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a {
+        color:white;
+    }
+
+    .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a:hover {
+        color: rgba(0, 0, 0, 0.849);
+    }
+}
+
