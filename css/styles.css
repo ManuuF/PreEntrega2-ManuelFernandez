@@ -10,10 +10,12 @@ ul {
 }
 
 body {
-  background-image: url(../../media/img/Pirate\ and\ nautical\ theme\ grunge\ background_.jpg);
+  background-image: url(../../media/img/OLD\ VINTAGE\ MAPS.jpg);
   background-size: cover;
   /*CONTACTO*/
   /*REGISTRO*/
+  /*EVENTOS*/
+  /*NOTICIAS*/
   /*PIE DE PAGINA*/
 }
 body .vinculo {
@@ -166,11 +168,6 @@ body .contenido-de-contacto .contenido-2 {
 body ::placeholder {
   color: #afa384;
 }
-body .logo-head-3 {
-  text-align: center;
-  margin-top: 70px;
-  margin-right: 20px;
-}
 body .caja-de-registro {
   width: 400px;
   background: rgba(0, 0, 0, 0.849);
@@ -225,6 +222,66 @@ body .caja-de-registro a:hover {
 }
 body ::placeholder {
   color: #afa384;
+}
+body .caja-evento {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.849);
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: #afa384;
+  box-shadow: 7px 13px 37px #5d0f0f;
+}
+body .titulo-eventos {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "calibri";
+  color: #5d0f0f;
+}
+body .evento {
+  align-items: center;
+  padding-bottom: 30px;
+}
+body .evento a {
+  color: #afa384;
+  text-decoration: none;
+}
+body .evento a:hover {
+  color: #afa384;
+  text-decoration: underline;
+}
+body .caja-noticia {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.849);
+  padding: 30px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: #afa384;
+  box-shadow: 7px 13px 37px #5d0f0f;
+}
+body .titulo-noticias {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: "calibri";
+  color: #5d0f0f;
+}
+body .noticia {
+  align-items: center;
+  padding-bottom: 30px;
+}
+body .noticia a {
+  color: #afa384;
+  text-decoration: none;
+}
+body .noticia a:hover {
+  color: #afa384;
+  text-decoration: underline;
 }
 body .pie-de-pagina {
   grid-area: pie;

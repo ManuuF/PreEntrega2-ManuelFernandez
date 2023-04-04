@@ -176,11 +176,7 @@ body {
 }
 
 /*REGISTRO*/
-.logo-head-3 {
-    text-align: center;
-    margin-top: 70px;
-    margin-right: 20px;
-}
+
 .caja-de-registro {
     width: 400px;
     background:  rgba(0, 0, 0, 0.849);
@@ -246,6 +242,74 @@ body {
     color: #afa384;
 }
 
+/*EVENTOS*/
+
+.caja-evento {
+    width: 400px;
+    background:  rgba(0, 0, 0, 0.849);
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: $font-family_1;
+    color: $color_3;
+    box-shadow: 7px 13px 37px $color_4;
+}
+.titulo-eventos {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: $font-family_1;
+    color: $color_4;
+}
+.evento {
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.evento a {
+    color: #afa384;
+    text-decoration: none;
+}
+
+.evento a:hover {
+    color: #afa384;
+    text-decoration: underline;
+}
+/*NOTICIAS*/
+
+.caja-noticia {
+    width: 400px;
+    background:  rgba(0, 0, 0, 0.849);
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: $font-family_1;
+    color: $color_3;
+    box-shadow: 7px 13px 37px $color_4;
+}
+.titulo-noticias {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: $font-family_1;
+    color: $color_4;
+}
+.noticia {
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.noticia a {
+    color: #afa384;
+    text-decoration: none;
+}
+
+.noticia a:hover {
+    color: #afa384;
+    text-decoration: underline;
+}
 
 /*PIE DE PAGINA*/    
     .pie-de-pagina {
