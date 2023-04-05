@@ -10,7 +10,7 @@ ul {
 }
 
 body {
-  background-image: url(../../media/img/OLD\ VINTAGE\ MAPS.jpg);
+  background-image: url(../media/img/fondo.jpg);
   background-size: cover;
   /*CONTACTO*/
   /*REGISTRO*/
@@ -30,21 +30,23 @@ body .head {
 body .grid {
   display: grid;
   grid-template-columns: repeat(3, 33, 33%);
-  grid-template-rows: 50px 100px 346px 400px 400px;
+  grid-template-rows: 50px 100px 320px 400px 400px;
   grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "color-cards bprecios sprecios" "pie pie pie";
 }
 body .head-logo {
   grid-area: head-logo;
   padding-left: 10px;
+  padding-top: 5px;
 }
 body .head-botones {
   grid-area: head-botones;
   display: flex;
   justify-content: right;
+  padding-top: 5px;
 }
 body .banner {
   grid-area: banner;
-  background-image: url(../../media/img/Banner2.jpg);
+  background-image: url(../media/img/banner.jpg);
   width: 100%;
   height: 300px;
   background-position: 0;
@@ -283,67 +285,9 @@ body .noticia a:hover {
   color: #afa384;
   text-decoration: underline;
 }
-body .pie-de-pagina {
+body .pie {
   grid-area: pie;
-  margin-top: 100px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.849);
-  justify-content: center;
-}
-body .pie-de-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1920px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 70px 0px;
-}
-body .pie-de-pagina .grupo-1 .box .red-social {
-  text-align: right;
-  margin-right: 80px;
-}
-body .pie-de-pagina .grupo-1 .box .red-social h2 {
-  text-align: right;
-  margin-right: 4px;
-}
-body .pie-de-pagina .grupo-1 .box .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.849);
-  text-align: center;
-}
-body .pie-de-pagina .grupo-1 .box .red-social a:hover {
-  color: #5d0f0f;
-}
-body .pie-de-pagina .grupo-1 .box h2 {
-  color: white;
-  margin-bottom: 25px;
-  font-size: 20px;
-  font-family: "calibri";
-  text-transform: uppercase;
-  text-align: center;
-}
-body .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a {
-  color: white;
-  margin-bottom: 10px;
-  margin-left: 60px;
-  display: block;
-  list-style: none;
-  text-decoration: none;
-  font-family: "calibri";
-}
-body .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 a:hover {
-  color: #5d0f0f;
-}
-body .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 li {
-  display: inline-block;
-  margin: 10px;
-  list-style: none;
+  margin-top: 220px;
 }
 
 .red {
@@ -364,6 +308,47 @@ body .pie-de-pagina .grupo-1 .box .menu .contenido-menu-foot-1 li {
 
 .black {
   background-color: black;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-rows: 50px 100px 230px auto auto auto 60px;
+    grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "color-cards color-cards color-cards" "bprecios bprecios bprecios" "sprecios sprecios sprecios" "pie pie pie";
+  }
+  .grid-registro .grid-contacto {
+    grid-template-rows: 50px 100px auto 60px;
+    grid-template-areas: "navbar navbar navbar" "empty logo empty" "box box box" "pie pie pie";
+  }
+  .grid-registro .grid-contacto .logo-head-2 {
+    grid-area: logo;
+  }
+  .grid-registro .grid-contacto .box-registro {
+    grid-area: box;
+  }
+  .grid-registro .grid-contacto .pie-de-pagina {
+    grid-area: pie;
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .grid {
+    grid-template-rows: 50px 100px 230px auto auto auto 60px;
+    grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "color-cards color-cards color-cards" "bprecios bprecios bprecios" "sprecios sprecios sprecios" "pie pie pie";
+  }
+  .grid-registro .grid-contacto {
+    grid-template-rows: 50px 100px auto 60px;
+    grid-template-areas: "navbar navbar navbar" "empty logo empty" "box box box" "pie pie pie";
+  }
+  .grid-registro .grid-contacto .logo-head-2 {
+    grid-area: logo;
+  }
+  .grid-registro .grid-contacto .box-registro {
+    grid-area: box;
+  }
+  .grid-registro .grid-contacto .pie-de-pagina {
+    grid-area: pie;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

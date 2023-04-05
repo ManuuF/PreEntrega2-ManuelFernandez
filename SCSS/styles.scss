@@ -24,17 +24,21 @@ body {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 33,33%);
-        grid-template-rows: 50px 100px 346px 400px 400px;
+        grid-template-rows: 50px 100px 320px 400px 400px;
         grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "color-cards bprecios sprecios" "pie pie pie";
     }
     .head-logo {
         grid-area: head-logo;
         padding-left: 10px;
+        padding-top: 5px;
+        
     }
+    
     .head-botones {
         grid-area: head-botones;
         display: flex;
         justify-content: right;
+        padding-top: 5px;
     }
     .banner {
         grid-area: banner;
@@ -312,76 +316,14 @@ body {
 }
 
 /*PIE DE PAGINA*/    
-    .pie-de-pagina {
+    .pie{
         grid-area: pie;
-        margin-top: 100px;
-        width: 100%;
-        background-color: $background-color;
-        justify-content: center;
-        .grupo-1 {
-            width: 100%;
-            max-width: 1920px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 50px;
-            padding: 70px 0px;
-            .box {
-                .red-social {
-                    h2 {
-                        text-align: right;
-                        margin-right: 4px;
-                    }
-                    text-align: right;
-                    margin-right: 80px;
-                    a {
-                        display: inline-block;
-                        text-decoration: none;
-                        width: 45px;
-                        height: 45px;
-                        line-height: 45px;
-                        color: $color_2;
-                        background-color: $background-color;
-                        text-align: center;
-                        &:hover {
-                            color: $color_4;
-                        }
-                    }
-                }
-                h2 {
-                    color: $color_2;
-                    margin-bottom: 25px;
-                    font-size: 20px;
-                    font-family: $font-family_1;
-                    text-transform: uppercase;
-                    text-align: center;
-                }
-                .menu {
-                    .contenido-menu-foot-1 {
-                        a {
-                            color: $color_2;
-                            margin-bottom: 10px;
-                            margin-left: 60px;
-                            display: block;
-                            list-style: none;
-                            text-decoration: none;
-                            font-family: $font-family_1;
-                            &:hover {
-                                color: $color_4;
-                            }
-                        }
-                        li {
-                            display: inline-block;
-                            margin: 10px;
-                            list-style: none;
-                        }
-                    }
-                }
-            }
-        }
+        margin-top: 220px
     }
+
 }
 
 
 @import "./Partials/bucles";
+@import "./Partials/queries"
 
