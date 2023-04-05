@@ -9,14 +9,9 @@ ul {
   margin: 0;
 }
 
-body {
+body {/*INDEX Y FONDO*/
   background-image: url(../media/img/fondo.jpg);
   background-size: cover;
-  /*CONTACTO*/
-  /*REGISTRO*/
-  /*EVENTOS*/
-  /*NOTICIAS*/
-  /*PIE DE PAGINA*/
 }
 body .vinculo {
   text-decoration: none;
@@ -104,6 +99,8 @@ body .logo-head-2 {
   margin-top: 70px;
   margin-right: 20px;
 }
+
+/*CONTACTO*/
 body .titulo-Contacto {
   text-align: center;
   font-size: 22px;
@@ -170,6 +167,8 @@ body .contenido-de-contacto .contenido-2 {
 body ::placeholder {
   color: #afa384;
 }
+
+/*REGISTRO*/
 body .caja-de-registro {
   width: 400px;
   background: rgba(0, 0, 0, 0.849);
@@ -225,6 +224,8 @@ body .caja-de-registro a:hover {
 body ::placeholder {
   color: #afa384;
 }
+
+/*EVENTO*/
 body .caja-evento {
   width: 400px;
   background: rgba(0, 0, 0, 0.849);
@@ -255,6 +256,8 @@ body .evento a:hover {
   color: #afa384;
   text-decoration: underline;
 }
+
+/*NOTICIA*/
 body .caja-noticia {
   width: 400px;
   background: rgba(0, 0, 0, 0.849);
@@ -285,11 +288,15 @@ body .noticia a:hover {
   color: #afa384;
   text-decoration: underline;
 }
+
+/*PIE*/
 body .pie {
   grid-area: pie;
   margin-top: 220px;
 }
 
+
+/*BUCLE PARA BOTONES DE COLORES*/
 .red {
   background-color: red;
 }
@@ -310,6 +317,8 @@ body .pie {
   background-color: black;
 }
 
+
+/*MEDIA QUERIES PARA CELU Y TABLET*/
 @media (max-width: 768px) {
   .grid {
     grid-template-rows: 50px 100px 230px auto auto auto 60px;

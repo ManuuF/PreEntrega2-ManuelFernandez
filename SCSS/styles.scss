@@ -70,7 +70,7 @@ body {
         }        
     }
     .btn {
-        font-family: "calibri";
+        font-family: $font-family_1;
         font-size: 18px;
         font-weight: bold;
         margin: 10px;
@@ -89,12 +89,12 @@ body {
         
     }
     .btn-header {
-        background-color:rgba(0, 0, 0, 0.849)
+        background-color:$color_5
     }
     .btn-header:hover{
         background-color: $color_4;
     }
-/*CONTACTO*/
+
 .logo-head-2 {
     text-align: center;
     margin-top: 70px;
@@ -105,13 +105,13 @@ body {
     text-align: center;
     font-size: 22px;
     margin-bottom: 10px;
-    font-family: 'calibri';
+    font-family: $font-family_1;
     color: $color_4;    
 }
 
 .caja-de-contacto {
     width: 800px;
-    background: rgba(0, 0, 0, 0.849);
+    background: $color_5;
     padding: 30px;
     margin: auto;
     margin-top: 10px;
@@ -148,7 +148,7 @@ body {
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid $color_3;
-    font-family: 'calibri';
+    font-family: $font-family_1;
     font-size: 18px;
     color: $color_2;
 }
@@ -179,11 +179,11 @@ body {
     color: $color_3;
 }
 
-/*REGISTRO*/
+
 
 .caja-de-registro {
     width: 400px;
-    background:  rgba(0, 0, 0, 0.849);
+    background:  $color_5;
     padding: 30px;
     margin: auto;
     margin-top: 10px;
@@ -203,22 +203,22 @@ body {
 
 .controles {
     width: 100%;
-    background: #5d0f0f;
+    background: $color_4;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #afa384;
-    font-family: 'calibri';
+    border: 1px solid $color_3;
+    font-family: $font-family_1;
     font-size: 18px;
-    color: white;
+    color: $color_2;
 }
 
 .caja-de-registro .btn {
     width: 100%;
-    background: #5d0f0f;
-    border: 1px solid #afa384;
+    background: $color_4;
+    border: 1px solid $color_3;
     padding: 12px;
-    color: #afa384;
+    color: $color_3;
     margin: 16px 0;
     font-size: 16px;
     cursor: pointer;
@@ -233,24 +233,24 @@ body {
 }
 
 .caja-de-registro a {
-    color: #afa384;
+    color: $color_3;
     text-decoration: none;
 }
 
 .caja-de-registro a:hover {
-    color: #afa384;
+    color: $color_3;
     text-decoration: underline;
 }
 
 ::placeholder {
-    color: #afa384;
+    color: $color_3;
 }
 
-/*EVENTOS*/
+
 
 .caja-evento {
     width: 400px;
-    background:  rgba(0, 0, 0, 0.849);
+    background:  $color_5;
     padding: 30px;
     margin: auto;
     margin-top: 10px;
@@ -272,19 +272,19 @@ body {
 }
 
 .evento a {
-    color: #afa384;
+    color: $color_3;
     text-decoration: none;
 }
 
 .evento a:hover {
-    color: #afa384;
+    color: $color_3;
     text-decoration: underline;
 }
-/*NOTICIAS*/
+
 
 .caja-noticia {
     width: 400px;
-    background:  rgba(0, 0, 0, 0.849);
+    background:  $color_5;
     padding: 30px;
     margin: auto;
     margin-top: 10px;
@@ -306,16 +306,16 @@ body {
 }
 
 .noticia a {
-    color: #afa384;
+    color: $color_3;
     text-decoration: none;
 }
 
 .noticia a:hover {
-    color: #afa384;
+    color: $color_3;
     text-decoration: underline;
 }
 
-/*PIE DE PAGINA*/    
+  
     .pie{
         grid-area: pie;
         margin-top: 220px
