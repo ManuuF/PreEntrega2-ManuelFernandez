@@ -25,7 +25,7 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 33,33%);
         grid-template-rows: 50px 100px 320px 400px 400px;
-        grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "color-cards bprecios sprecios" "pie pie pie";
+        grid-template-areas: "navbar navbar navbar" "head-logo empty head-botones" "banner banner banner" "bprecios nada sprecios" "pie pie pie";
     }
     .head-logo {
         grid-area: head-logo;
@@ -47,11 +47,10 @@ body {
         background-position: 0;
         background-size: cover;
     }
-    .seccion1 {
-        grid-area: color-cards;        
-    }
+    
     .seccion2 {
         grid-area: bprecios;
+        padding-left: 220px;
         .cartas {
             transform: 2s;
         }
@@ -119,8 +118,9 @@ body {
     font-family: $font-family_1;
     color: $color_3;
     box-shadow: 7px 13px 37px $color_4;
+    
 }
-
+   
 .texto-de-contacto p {
     text-align: left;
     font-size: 20px;
